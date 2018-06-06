@@ -20,7 +20,7 @@ public class MQProducer implements Producer{
 
     @Override
     public int produce(String message) {
-    logger.info("Sending message: ");
+    logger.info("Sending message: " + message);
         try {
             // Create a ConnectionFactory
             ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(activeMQAddress);
